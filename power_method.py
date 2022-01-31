@@ -1,6 +1,7 @@
 import numpy as np
 
 
+# 幂法
 def power_method(A, iters, print_=True):
     A_size = np.shape(A)[0]
     v = np.ones((A_size, 1))
@@ -18,4 +19,3 @@ def power_method(A, iters, print_=True):
 # A = np.array([[1, 1, 0.5], [1, 1, 0.25], [0.5, 0.25, 2]])
 A = np.array([[3, -4, 3], [-4, 6, 3], [3, 3, 1]])
 power_method(A, 20)
-
